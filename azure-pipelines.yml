@@ -1,9 +1,4 @@
 # Starter pipeline
-- task: Go@0
-  inputs:
-    command: 'build'
-    arguments: 'main.go'
-      workingDirectory: '.'
 trigger:
 - master
 
