@@ -1,0 +1,1 @@
+[![Build Status](https://dev.azure.com/lundincodeitez/demo/_apis/build/status/lundin.azure_demo?branchName=master)](https://dev.azure.com/lundincodeitez/demo/_build/latest?definitionId=2&branchName=master)
