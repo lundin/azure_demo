@@ -1,6 +1,8 @@
 # Starter pipeline
+
 trigger:
 - master
+
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -8,6 +10,19 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+
+- task: GoTool@0
+  inputs:
+    version: '1.13.5'
+- task: Go@0
+  inputs:
+    command: 'get'
+    arguments: '-d'
+    workingDirectory: '.'
+- task: Go@0
+  inputs:
+    command: 'build'
+    workingDirectory: '.'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
